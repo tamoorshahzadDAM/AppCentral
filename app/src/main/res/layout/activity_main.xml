@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/tvOpcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleciona un opcion:"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08">
+
+        <RadioButton
+            android:id="@+id/rdBus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Un Bus"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdTodosBuses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Todos los buses"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tvMat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduce una matricula:"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etMat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Matricula"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siguiente" />
+
+    <Button
+        android:id="@+id/btSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir" />
+
+</LinearLayout>
