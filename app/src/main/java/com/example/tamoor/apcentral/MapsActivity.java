@@ -118,11 +118,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     JSONObject pos = arrayDePos.getJSONObject(i);
 
                     //Sacamos las columnes desde base de datos
-                    int idLoc = pos.getInt("ID_LOC");
-                    double latitud = pos.getDouble("LATITUD");
-                    double longitud = pos.getDouble("LONGITUD");
-                    String fecha = pos.getString("FECHA");
-                    matricula = pos.getString("MATRICULA");
+                    int idLoc = pos.getInt("idloc");
+                    double latitud = pos.getDouble("latitud");
+                    double longitud = pos.getDouble("longitud");
+                    String fecha = pos.getString("fecha");
+                    matricula = pos.getString("matricula");
+                    
                     //Latitud y longitud lo guarda en la lista de posiciones.
                     arrayPosiciones.add(new LatLng(latitud, longitud));
                 }
