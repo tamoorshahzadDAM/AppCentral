@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@android:color/holo_blue_dark">
 
 
     <TextView
@@ -11,7 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Seleciona un opcion:"
-        android:textSize="22sp" />
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -24,14 +28,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Un Bus"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_green_light" />
 
         <RadioButton
             android:id="@+id/rdTodosBuses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Todos los buses"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_green_light"
+            android:textStyle="normal|bold" />
     </RadioGroup>
 
 
@@ -40,7 +48,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Introduce una matricula:"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_green_light" />
 
     <EditText
         android:id="@+id/etMat"
@@ -48,18 +58,25 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Matricula"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textStyle="normal|bold" />
 
     <Button
         android:id="@+id/btSiguiente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Siguiente" />
+        android:text="Siguiente"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btSalir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Salir" />
+        android:text="Salir"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_red_dark" />
 
 </LinearLayout>
