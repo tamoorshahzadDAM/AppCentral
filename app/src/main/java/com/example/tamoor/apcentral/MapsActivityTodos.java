@@ -99,11 +99,11 @@ public class MapsActivityTodos extends FragmentActivity implements OnMapReadyCal
                     JSONObject pos = arrayPos.getJSONObject(i);
 
                     //Saco las columnes de table y guardo cada uno en un varibale.
-                    int idLoc = pos.getInt("ID_LOC");
-                    double latitud = pos.getDouble("LATITUD");
-                    double longitud = pos.getDouble("LONGITUD");
-                    fecha = pos.getString("FECHA");
-                    matricula = pos.getString("MATRICULA");
+                    int idLoc = pos.getInt("idloc");
+                    double latitud = pos.getDouble("latitud");
+                    double longitud = pos.getDouble("longitud");
+                    fecha = pos.getString("fecha");
+                    matricula = pos.getString("matricula");
 
                     //latitud y longitud lo guardo en array de posiciones.
                     arrayPosiciones[i] = new LatLng(latitud, longitud);
